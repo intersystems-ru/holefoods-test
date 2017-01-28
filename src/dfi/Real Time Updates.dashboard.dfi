@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dashboard xmlns="http://www.intersystems.com/deepsee/library" name="Real Time Updates" folderName="" title="" description="" keywords="Patients,KPIs" owner="" shared="true" public="true" locked="false" resource="" timeCreated="2012-07-09T17:18:48.467Z" createdBy="" category="" bookCover="{background: {style:&apos;background-color:white;top:12.5px;&apos;,src:&apos;covers/9160582_s.jpg&apos;,imageStyle:&apos;width:134px;height:190px;&apos;},header: {text:&apos;$type&apos;,style:&apos;text-align: left;&apos;},title: {text:&apos;$title&apos;,style:&apos;text-align: left;font-weight: bold;color:rgb(0, 75, 152);font-family:arial narrow;top:12.5px;&apos;},image: {style:&apos;display: none;&apos;,src:&apos;deepsee/ds2_dashboard_44.png&apos;,imageStyle:&apos;width:64px;height:64px;&apos;},footer: {text:&apos;$owner&apos;,style:&apos;display: none;&apos;}}" scheme="" worklistCount="2" snapTo="true" snapGrid="true" gridRows="9" gridCols="10" canResize="true" canModify="true" showTitleBar="true" titleBarOpacity="" titleBarColor="" selectedTitleBarOpacity="" selectedTitleBarColor="" titleBarTextColor="" selectedTitleBarTextColor="" titleBarFont="" companyName="Patients Sample" companyLogo="" companyStyle="" backgroundColor="white" backgroundImage="none" backgroundRepeat="no-repeat" backgroundSize="100% 100%" backgroundOpacity="1" widgetBorders="1px solid #F0F0F0" widgetBordersSwitch="edit" widgetBordersColor="#F0F0F0" widgetBordersStyle="solid" widgetBordersWidth="1" widgetBordersToggle="true">
+  <widget name="" type="pivot" subtype="pivot" subtypeClass="" title="Patients by Patient Group" dataSource="Use in Dashboards/Patients by Group.pivot" dataLink="" drillDownDataSource="" top="16" left="13" width="716" height="242" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="0" colSpanL="8" rowSpanL="3" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+  </widget>
+  <widget name="" type="meter" subtype="textMeter" subtypeClass="" title="Sample Size" dataSource="DemoDataChanges.kpi" dataLink="" drillDownDataSource="" top="497" left="13" width="248" height="148" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="6" homeColL="0" colSpanL="4" rowSpanL="2" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <control name="" action="AddPatients" target="" targetProperty="" location="dashboard" type="auto" controlClass="" label="Add Patients" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="ChangeFavoriteColors" target="" targetProperty="" location="dashboard" type="auto" controlClass="" label="Change Favorite Colors" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="ChangePatientGroups" target="" targetProperty="" location="dashboard" type="auto" controlClass="" label="Change Patient Groups" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="AddEncounters" target="" targetProperty="" location="dashboard" type="auto" controlClass="" label="Add Encounters" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="DeleteSomePatients" target="" targetProperty="" location="dashboard" type="auto" controlClass="" label="Delete Some Patients" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="ChangeSomeDoctors" target="" targetProperty="" location="dashboard" type="auto" controlClass="" label="Change Some Doctors" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="refresh" target="*" targetProperty="" location="dashboard" type="timer" controlClass="" timeout="5" label="" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <dataProperty name="" label="Patient Count" width="" align="" subtype="" style="" display="" format="" showAs="" valueColumn="false" summary="" summaryValue="" dataValue="PatCount" targetValue="" thresholdLower="" thresholdUpper="" rangeLower="" rangeUpper="" baseValue="" override=""></dataProperty>
+  </widget>
+  <widget name="" type="pivot" subtype="pivot" subtypeClass="" title="Patients by Doctor Group" dataSource="Use in Dashboards/Patients by Doctor Group.pivot" dataLink="" drillDownDataSource="" top="235" left="13" width="245" height="256" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="3" homeColL="0" colSpanL="4" rowSpanL="3" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+  </widget>
+  <widget name="" type="pivot" subtype="pivot" subtypeClass="" title="Patients by Favorite Color" dataSource="Use in Dashboards/Patients by Favorite Color.pivot" dataLink="" drillDownDataSource="" top="235" left="274" width="275" height="353" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="3" homeColL="4" colSpanL="4" rowSpanL="5" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+  </widget>
+</dashboard>

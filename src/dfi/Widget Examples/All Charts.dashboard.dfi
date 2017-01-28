@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dashboard xmlns="http://www.intersystems.com/deepsee/library" name="All Charts" folderName="Widget Examples" title="" description="All charts except for SwirlChart, the newest. There is just no room!" keywords="HoleFoods" owner="" shared="true" public="true" locked="false" resource="" timeCreated="2012-11-27T16:05:14.765Z" createdBy="" category="Widgets" bookCover="{background: {style:&apos;background:white;&apos;},header: {text:&apos;$type&apos;},title: {text:&apos;$title&apos;,style:&apos;font-weight: bold;color:rgb(0, 0, 240);font-family:helvetica;font-size:24px;&apos;},image: {style:&apos;top:71.875px;width:137.5px;height:120px;&apos;,src:&apos;covers/8945757_s.jpg&apos;,imageStyle:&apos;width:137.5px;height:120px;&apos;},footer: {text:&apos;$owner&apos;,style:&apos;display: none;&apos;}}" scheme="" worklistCount="0" snapTo="true" snapGrid="true" gridRows="3" gridCols="4" canResize="true" canModify="true" showTitleBar="true" titleBarOpacity="" titleBarColor="" selectedTitleBarOpacity="" selectedTitleBarColor="" titleBarTextColor="" selectedTitleBarTextColor="" titleBarFont="" companyName="" companyLogo="covers/holefoods_logo.png" companyStyle="" backgroundColor="white" backgroundImage="none" backgroundRepeat="no-repeat" backgroundSize="100% 100%" backgroundOpacity="1" widgetBorders="1px solid #F0F0F0" widgetBordersSwitch="edit" widgetBordersColor="#F0F0F0" widgetBordersStyle="solid" widgetBordersWidth="1" widgetBordersToggle="true">
+  <widget name="widget1" type="pivot" subtype="areaChart" subtypeClass="lineChart" title="Area Chart" dataSource="Chart Demos/Area Chart.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="0" colSpanL="1" rowSpanL="1" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+    <property name="legendPos">none</property>
+  </widget>
+  <widget name="widget2" type="pivot" subtype="barChart" subtypeClass="barChart" title="Bar Chart" dataSource="Chart Demos/Bar Chart.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="1" colSpanL="1" rowSpanL="1" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+    <property name="legendPos">none</property>
+  </widget>
+  <widget name="widget3" type="pivot" subtype="bubbleChart" subtypeClass="bubbleChart" title="Bubble Chart" dataSource="Chart Demos/Bubble Chart.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="2" colSpanL="1" rowSpanL="1" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+    <property name="legendPos">none</property>
+  </widget>
+  <widget name="widget4" type="pivot" subtype="bullseyeChart" subtypeClass="bullseyeChart" title="Bullseye Chart" dataSource="Chart Demos/Bullseye Chart.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="3" colSpanL="1" rowSpanL="1" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+    <property name="legendPos">none</property>
+    <override name="bullseyeChart">{backgroundStyle:'fill: white; stroke: none;',legendVisible:'false',markerStyle:'fill: white;',plotAreaStyle:'fill: white; stroke: none;',title:'Revenue',titleStyle:'font-weight:bold;',xAxis:{majorGridLines:false,_type:'axis'},yAxisList:[{_type:'axis'}],_type:'bullseyeChart'}</override>
+    <override name="legend">{hidden:true,orientation:'horizontal',_type:'chartLegend'}</override>
+  </widget>
+  <widget name="widget5" type="pivot" subtype="comboChart" subtypeClass="comboChart" title="Combo Chart" dataSource="Chart Demos/Combo Chart.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="1" homeColL="0" colSpanL="1" rowSpanL="1" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+    <property name="legendPos">none</property>
+    <dataSeries type="area" markerShape="" color="" yAxisIndex="0" hasLegend="true"></dataSeries>
+    <dataSeries type="line" markerShape="" color="" yAxisIndex="0" hasLegend="true"></dataSeries>
+    <override name="comboChart">{legendVisible:'false',seriesColorsOverride:',',xAxis:{_type:'axis'},yAxisList:[{title:'Revenue',_type:'axis'},{labelPosition:'right',title:'Units Sold',_type:'axis'}],seriesTypes:'area,line',_type:'comboChart'}</override>
+    <override name="legend">{hidden:true,_type:'chartLegend'}</override>
+  </widget>
+  <widget name="widget6" type="pivot" subtype="hilowChart" subtypeClass="hilowChart" title="High Low Chart" dataSource="Chart Demos/High Low Chart.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="1" homeColL="1" colSpanL="1" rowSpanL="1" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+    <property name="legendPos">none</property>
+    <override name="hilowChart">{legendVisible:'false',maxLabelLen:6,selectedItemStyle:'fill: none;stroke: red;stroke-width:0.1;',xAxis:{_type:'axis'},yAxisList:[{title:'Revenue',_type:'axis'}],_type:'hilowChart'}</override>
+  </widget>
+  <widget name="widget7" type="pivot" subtype="lineChart" subtypeClass="lineChart" title="Line Chart" dataSource="Chart Demos/Line Chart.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="1" homeColL="2" colSpanL="1" rowSpanL="1" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="legendPos">none</property>
+  </widget>
+  <widget name="widget8" type="pivot" subtype="pieChart" subtypeClass="pieChart" title="Pie Chart" dataSource="Chart Demos/Pie Chart.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="1" homeColL="3" colSpanL="1" rowSpanL="1" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+  </widget>
+  <widget name="widget9" type="pivot" subtype="timeChart" subtypeClass="lineChart" title="Time Chart" dataSource="Chart Demos/Time Chart.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="2" homeColL="0" colSpanL="2" rowSpanL="1" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+    <property name="legendPos">none</property>
+    <override name="legend">{hidden:true,orientation:'horizontal',_type:'chartLegend'}</override>
+    <override name="lineChart">{timeBased:true,_type:'lineChart'}</override>
+  </widget>
+  <widget name="widget10" type="pivot" subtype="treeMapChart" subtypeClass="treeMapChart" title="Tree Map Chart" dataSource="Chart Demos/Tree Map Chart.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="2" homeColL="2" colSpanL="1" rowSpanL="1" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+    <property name="legendPos">none</property>
+  </widget>
+  <widget name="widget11" type="pivot" subtype="xyChart" subtypeClass="xyChart" title="X/Y Chart" dataSource="Chart Demos/XY Chart.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="2" homeColL="3" colSpanL="1" rowSpanL="1" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <property name="analyzer">0</property>
+    <property name="legendPos">none</property>
+    <override name="xyChart">{legendVisible:'false',selectedItemStyle:'fill: none;stroke: red;stroke-width:0.1;',xAxis:{title:'Units Sold',_type:'axis'},yAxisList:[{title:'Revenue',_type:'axis'}],_type:'xyChart'}</override>
+  </widget>
+</dashboard>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dashboard xmlns="http://www.intersystems.com/deepsee/library" name="High Low Chart" folderName="Widget Examples" title="" description="" keywords="Patients" owner="" shared="true" public="true" locked="false" resource="" timeCreated="2012-07-09T17:18:48.511Z" createdBy="" category="Widgets" bookCover="{background: {style:&apos;background-color:white;top:25px;&apos;,src:&apos;covers/high_low_chart.png&apos;,imageStyle:&apos;width:134px;height:190px;&apos;},header: {text:&apos;$type&apos;},title: {text:&apos;$title&apos;,style:&apos;font-weight: bold;color:rgb(55, 42, 15);font-family:verdana;top:140.625px;&apos;},image: {style:&apos;display: none;&apos;,src:&apos;deepsee/ds2_dashboard_44.png&apos;,imageStyle:&apos;width:64px;height:64px;&apos;},footer: {text:&apos;$owner&apos;}}" scheme="" worklistCount="0" snapTo="true" snapGrid="true" gridRows="2" gridCols="2" canResize="true" canModify="true" showTitleBar="true" titleBarOpacity="" titleBarColor="" selectedTitleBarOpacity="" selectedTitleBarColor="" titleBarTextColor="" selectedTitleBarTextColor="" titleBarFont="" companyName="Patients Sample" companyLogo="" companyStyle="" backgroundColor="white" backgroundImage="none" backgroundRepeat="no-repeat" backgroundSize="100% 100%" backgroundOpacity="1" widgetBorders="1px solid #F0F0F0" widgetBordersSwitch="edit" widgetBordersColor="#F0F0F0" widgetBordersStyle="solid" widgetBordersWidth="1" widgetBordersToggle="true">
+  <widget name="" type="pivot" subtype="hilowChart" subtypeClass="hilowChart" title="Sample High Low Chart" dataSource="Use in Dashboards/Demo High Low Chart.pivot" dataLink="" drillDownDataSource="" top="16" left="15" width="840" height="459" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="0" colSpanL="1" rowSpanL="2" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <control name="" action="applyFilter" target="" targetProperty="[DiagD].[H1].[Diagnoses]" location="widget" type="auto" controlClass="" label="Diagnoses" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="applyFilter" target="" targetProperty="[PatGrpD].[H1].[Patient Group]" location="widget" type="auto" controlClass="" label="Patient Group" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <property name="XgridLines">1</property>
+    <property name="YgridLines">0</property>
+    <property name="analyzer">0</property>
+    <property name="legendPos">none</property>
+    <property name="title">High and Low Ages by City</property>
+    <property name="valueLabels">1</property>
+    <override name="hilowChart">{legendVisible:'false',maxLabelLen:8,plotAreaStyle:'stroke:black;fill:none;',plotStyle:'fill:rgb(231,192,80);',selectedItemStyle:'fill: none;stroke: red;stroke-width:0.1;',seriesColorsOverride:'rgb(0,185,255)',title:'High and Low Ages by City',valueLabelsVisible:true,xAxis:{majorGridLines:false,minorGridLines:true,_type:'axis'},yAxisList:[{minorGridLines:true,title:'Age',_type:'axis'}],_type:'hilowChart'}</override>
+    <override name="legend">{hidden:true,_type:'chartLegend'}</override>
+  </widget>
+</dashboard>

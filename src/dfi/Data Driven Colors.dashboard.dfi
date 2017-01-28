@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dashboard xmlns="http://www.intersystems.com/deepsee/library" name="Data Driven Colors" folderName="" title="" description="" keywords="HoleFoods" owner="" shared="true" public="true" locked="false" resource="" timeCreated="2015-03-05T19:33:41.111Z" createdBy="" category="" bookCover="{background: {style:&apos;background-color:rgb(190, 226, 250);&apos;},header: {text:&apos;$type&apos;},title: {text:&apos;$title&apos;},image: {style:&apos;top:103.125px;&apos;,src:&apos;covers/8945757_s.jpg&apos;,imageStyle:&apos;width:64px;height:64px;&apos;},footer: {text:&apos;$owner&apos;}}" scheme="" worklistCount="2" snapTo="true" snapGrid="true" gridRows="10" gridCols="10" canResize="true" canModify="true" showTitleBar="true" titleBarOpacity="" titleBarColor="" selectedTitleBarOpacity="" selectedTitleBarColor="" titleBarTextColor="" selectedTitleBarTextColor="" titleBarFont="" companyName="" companyLogo="" companyStyle="" backgroundColor="white" backgroundImage="none" backgroundRepeat="no-repeat" backgroundSize="100% 100%" backgroundOpacity="1" widgetBorders="1px solid #F0F0F0" widgetBordersSwitch="edit" widgetBordersColor="#F0F0F0" widgetBordersStyle="solid" widgetBordersWidth="1" widgetBordersToggle="true">
+  <widget name="Widget1" type="pivot" subtype="barChart" subtypeClass="barChart" title="Data-Driven Colors (Tied to Regions)" dataSource="Use in Dashboards/Data-driven Colors.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="0" homeColL="0" colSpanL="7" rowSpanL="5" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="Region Colors.termlist">
+    <control name="" action="applyFilter" target="*" targetProperty="[Outlet].[H1].[Region]" location="dashboard" type="auto" controlClass="" label="Region" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="applyFilter" target="*" targetProperty="[DateOfSale].[Actual].[YearSold]" location="dashboard" type="auto" controlClass="" label="Year Sold" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="applyFilter" target="*" targetProperty="[Product].[P1].[Product Name]" location="dashboard" type="auto" controlClass="" label="Product Name" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="setChartType" target="*" targetProperty="table" location="widget" type="auto" controlClass="" label="" title="Display as a table" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="setChartType" target="*" targetProperty="barChart" location="widget" type="auto" controlClass="" label="" title="Display as a bar chart" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="setChartType" target="*" targetProperty="columnChart" location="widget" type="auto" controlClass="" label="" title="Display as a column chart" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <control name="" action="showListing" target="" targetProperty="" location="widget" type="auto" controlClass="" label="" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <property name="analyzer">0</property>
+  </widget>
+  <widget name="Widget2" type="pivot" subtype="barChart" subtypeClass="barChart" title="Standard Colors (Not Tied to Regions)" dataSource="Use in Dashboards/Data-driven Colors.pivot" dataLink="" drillDownDataSource="" width="200" height="200" sidebarContent="" showSidebar="false" sidebarWidth="" maximized="false" homeRowL="5" homeColL="0" colSpanL="7" rowSpanL="5" showToolbar="true" showToolbarBottomBorder="true" showToolbarOnlyWhenMaximized="false" colorToolbar="#F0F0F0" opacityToolbar="1" backgroundColor="#F0F0F0" opacity="1" theme="" dataColorList="">
+    <control name="" action="showListing" target="" targetProperty="" location="widget" type="auto" controlClass="" label="" title="" value="" text="" readOnly="false" valueList="" displayList="" activeWhen="">
+      <valueRequired>false</valueRequired>
+    </control>
+    <property name="analyzer">0</property>
+  </widget>
+</dashboard>
