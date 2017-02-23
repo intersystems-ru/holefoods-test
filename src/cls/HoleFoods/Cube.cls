@@ -167,5 +167,13 @@ XData Cube [ XMLNamespace = "http://www.intersystems.com/deepsee" ]
 
 Parameter DOMAIN = "HOLEFOODS";
 
+ClassMethod %OnGetFilterSpec(pFilterSpec As %String) As %String
+{
+   if $UserName="dev" {
+      s pFilterSpec=" [OUTLET].[H1].[REGION].&[Asia]"
+			}
+	Quit pFilterSpec
+}
+
 }
 
